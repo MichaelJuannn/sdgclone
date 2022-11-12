@@ -18,6 +18,17 @@ a {
 * {
   box-sizing: border-box;
 }
+main {
+  display: flow-root;
+}
+
+#drone {
+  background-image: url("../public/drone.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 @media (prefers-color-scheme: dark) {
   html {
