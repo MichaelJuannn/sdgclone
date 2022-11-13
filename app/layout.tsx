@@ -1,7 +1,5 @@
 import React from "react"
-import Link from "next/link"
 import '../styles/globals.css'
-import Image from "next/image"
 import { Navbar } from "../components/components"
 
 

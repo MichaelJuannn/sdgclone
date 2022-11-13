@@ -1,11 +1,12 @@
-import Image from "next/image"
-import { Hero, Navbar } from "../components/components"
+import { Hero, Information, SdgTable } from "../components/components"
 
 export default function Home() {
 
     return (
         <div>
             <Hero />
-        </div>
+            <Information />
+            <SdgTable />
+        </div >
     )
 }
