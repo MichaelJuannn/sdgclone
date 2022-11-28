@@ -2,6 +2,11 @@
 import Image from "next/image"
 import Link from "next/link"
 
+interface ReportProps {
+    title: string,
+    description: string,
+}
+
 export function Navbar(): JSX.Element {
     return (
         <div className="navbar bg-slate-500">
@@ -119,6 +124,25 @@ export function Sdgs(props: { index: number }): JSX.Element {
     return (
         <div>
             <Image src={`/sdgicon/E-WEB-Goal-${props.index}.png`} width="150" height="150" alt={"image"} id={`goals ${props.index}`}></Image>
+        </div>
+    )
+}
+
+export function Reports(props: ReportProps): JSX.Element {
+    return (
+        <div>
+            <div className="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+                <div className="card-body">
+                    <h2 className="card-title">{props.title}</h2>
+                    <p>{props.description}</p>
+                    <div className="card-actions justify-end">
+                        <button className="btn btn-primary">2019</button>
+                        <button className="btn btn-primary">2020</button>
+                        <button className="btn btn-primary">2021</button>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
